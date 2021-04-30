@@ -1,0 +1,96 @@
+00:00:00:000
+State for model input_reader_con is next time: 00:00:00:000
+State for model input_reader_ack is next time: 00:00:00:000
+State for model sender1 is packetNum: 0 & totalPacketNum: 0
+00:00:00:000
+State for model input_reader_con is next time: 00:00:10:000
+State for model input_reader_ack is next time: 00:00:17:000
+State for model sender1 is packetNum: 0 & totalPacketNum: 0
+00:00:10:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:17:000
+State for model sender1 is packetNum: 1 & totalPacketNum: 5
+00:00:15:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:17:000
+State for model sender1 is packetNum: 1 & totalPacketNum: 5
+00:00:17:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:13:000
+State for model sender1 is packetNum: 1 & totalPacketNum: 5
+00:00:17:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:13:000
+State for model sender1 is packetNum: 2 & totalPacketNum: 5
+00:00:22:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:13:000
+State for model sender1 is packetNum: 2 & totalPacketNum: 5
+00:00:30:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:25:000
+State for model sender1 is packetNum: 2 & totalPacketNum: 5
+00:00:30:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:25:000
+State for model sender1 is packetNum: 3 & totalPacketNum: 5
+00:00:35:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:25:000
+State for model sender1 is packetNum: 3 & totalPacketNum: 5
+00:00:50:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:25:000
+State for model sender1 is packetNum: 3 & totalPacketNum: 5
+00:00:55:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:10:000
+State for model sender1 is packetNum: 3 & totalPacketNum: 5
+00:00:55:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:10:000
+State for model sender1 is packetNum: 4 & totalPacketNum: 5
+00:01:00:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:00:10:000
+State for model sender1 is packetNum: 4 & totalPacketNum: 5
+00:01:05:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 4 & totalPacketNum: 5
+00:01:05:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:01:10:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:01:25:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:01:30:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:01:45:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:01:50:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:02:05:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: 00:01:05:000
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:02:10:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: inf
+State for model sender1 is packetNum: 5 & totalPacketNum: 5
+00:02:10:000
+State for model input_reader_con is next time: inf
+State for model input_reader_ack is next time: inf
+State for model sender1 is packetNum: 5 & totalPacketNum: 5

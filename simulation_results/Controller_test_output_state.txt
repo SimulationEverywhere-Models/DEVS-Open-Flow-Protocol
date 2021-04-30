@@ -1,0 +1,36 @@
+00:00:00:000
+State for model input_reader_packetIn is next time: 00:00:00:000
+State for model controller1 is packetNum: 0 & transmitting: 0
+00:00:00:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 0 & transmitting: 0
+00:00:10:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 1 & transmitting: 1
+00:00:17:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 1 & transmitting: 0
+00:00:20:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 2 & transmitting: 1
+00:00:27:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 2 & transmitting: 0
+00:00:30:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 3 & transmitting: 1
+00:00:37:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 3 & transmitting: 0
+00:00:40:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 4 & transmitting: 1
+00:00:47:000
+State for model input_reader_packetIn is next time: 00:00:10:000
+State for model controller1 is packetNum: 4 & transmitting: 0
+00:00:50:000
+State for model input_reader_packetIn is next time: inf
+State for model controller1 is packetNum: 5 & transmitting: 1
+00:00:57:000
+State for model input_reader_packetIn is next time: inf
+State for model controller1 is packetNum: 5 & transmitting: 0

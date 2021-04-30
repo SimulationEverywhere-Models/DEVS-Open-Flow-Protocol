@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Models>
+	<Model name="OFRouter" type="coupled" description="a coupled system for an OpenFlow-supported router.">
+		<Inputs>
+			<Port name="inp_1" type="Packet" description="new packet arrives"/>	
+			<Port name="inp_2" type="Packet" description="sending packet to the controller">
+			<Port name="inp_ack" type="int" description="receiving packet's ack">						
+		</Inputs>
+		<Outputs>
+			<Port name="outp_1" type="Packet" description="processed packet is sent to the receiver"/>
+			<Port name="outp_2" type="Packet" description="unprocessed packet is sent to the flowtable"/>
+			<Port name="outp_ack" type="int" description="acknowledged packet's number is sent to the sender"/>
+		</Outputs>
+		<Files>	
+			<File name="main.cpp" type="cpp" location="/top_model"/>
+			<File name="processor.hpp" type="hpp" location="/atomics"/>
+			<File name="flowtable.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+	<Model name="Sender" type="atomic" description="sending new packets">
+		<Inputs>
+			<Port name="controlIn" type="int" description="initiates the number of sending packets"/>
+			<Port name="ackIn" type="int" description="receives the acknowledged packet's number"/>	
+		</Inputs>
+		<Outputs>	
+			<Port name="packetNumSentOut" type="int" description="sends out the seq number of the sending packet"/>			
+			<Port name="packetSentOut" type="double" description="sends out a packet to the router"/>			
+			<Port name="ackReceivedOut" type="double" description="sends out the seq number of the acknowledged packet"/>
+		</Outputs>
+		<Files>
+			<File name="sender.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+	<Model name="Processor" type="atomic" description="process the new arriving packets">
+		<Inputs>
+			<Port name="in" type="Packet" description="receives packets from the sender to be forwarded"/>
+			<Port name="match_in" type="Packet" description="receives the matched packet from the flowtable"/>
+			<Port name="ack" type="int" description="receives the acknowledged packet's number"/>			
+		</Inputs>
+		<Outputs>
+			<Port name="out" type="Packet" description="sends out processed packet to receiver"/>
+			<Port name="match_out" type="Packet" description="sends out the unmatched packet to the flowtable"/>
+			<Port name="done" type="int" description="send out the acknowledged packet's number to the sender"/>	
+		</Outputs>
+		<Files>
+			<File name="processor.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+	<Model name="FlowTable" type="atomic" description="searching for the routing rules of unknow packets">
+		<Inputs>
+			<Port name="in" type="Packet" description="receives unmatched packets from the processor"/>
+			<Port name="match_in" type="Packet" description="receives matched packets from the controller"/>			
+		</Inputs>
+		<Outputs>
+			<Port name="out" type="Packet" description="sends out matched packets to be flowtable"/>
+			<Port name="match_out" type="Packet" description="sends out unmatched packets to the controller"/>	
+		</Outputs>
+		<Files>
+			<File name="flowtable.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+	<Model name="Receiver" type="atomic" description="receives packets from the OFRouter router">
+		<Inputs>
+			<Port name="packetReceivedIn" type="double" description="receives the processed packet"/>			
+		</Inputs>
+		<Outputs>
+			<Port name="ackOut" type="int" description="sends out the seq number of the acknowledged packet"/>	
+		</Outputs>
+		<Files>
+			<File name="receiver.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+	<Model name="Controller" type="atomic" description="calculates the routing rules for unknow packets">
+		<Inputs>
+			<Port name="packet_in" type="Packet" description="receives unmatched packets from the router"/>		
+		</Inputs>
+		<Outputs>
+			<Port name="packet_out" type="Packet" description="sends out matched packets to be processed"/>
+		</Outputs>
+		<Files>
+			<File name="controller.hpp" type="hpp" location="/atomics"/>
+		</Files>
+	</Model>
+</Models>
